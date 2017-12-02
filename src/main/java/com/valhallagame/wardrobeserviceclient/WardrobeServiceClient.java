@@ -1,7 +1,9 @@
 package com.valhallagame.wardrobeserviceclient;
 
 import java.io.IOException;
+import java.util.List;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.valhallagame.common.DefaultServicePortMappings;
 import com.valhallagame.common.RestCaller;
 import com.valhallagame.common.RestResponse;
@@ -31,9 +33,9 @@ public class WardrobeServiceClient {
 		return wardrobeServiceClient;
 	}
 
-	public RestResponse<String> getWardrobeItems(String characterName) throws IOException {
+	public RestResponse<List<String>> getWardrobeItems(String characterName) throws IOException {
 		return restCaller.postCall(wardrobeServiceServerUrl + "/v1/wardrobe/get-wardrobe-items",
-				new GetWardrobeItemsParameter(characterName), String.class);
+				new GetWardrobeItemsParameter(characterName), new TypeReference<List<String>>() {});
 	}
 
 	public RestResponse<String> addWardrobeItem(String characterName, String itemName) throws IOException {
