@@ -7,8 +7,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.valhallagame.common.DefaultServicePortMappings;
 import com.valhallagame.common.RestCaller;
 import com.valhallagame.common.RestResponse;
-import com.valhallagame.wardrobeserviceclient.model.AddWardrobeItemParameter;
-import com.valhallagame.wardrobeserviceclient.model.GetWardrobeItemsParameter;
+import com.valhallagame.wardrobeserviceclient.message.AddWardrobeItemParameter;
+import com.valhallagame.wardrobeserviceclient.message.GetWardrobeItemsParameter;
 
 public class WardrobeServiceClient {
 	private static WardrobeServiceClient wardrobeServiceClient;

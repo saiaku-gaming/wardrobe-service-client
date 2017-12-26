@@ -1,4 +1,4 @@
-package com.valhallagame.wardrobeserviceclient.model;
+package com.valhallagame.wardrobeserviceclient.message;
 
 import javax.validation.constraints.NotNull;
 
