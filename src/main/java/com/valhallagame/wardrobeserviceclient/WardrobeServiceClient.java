@@ -8,6 +8,7 @@ import com.valhallagame.common.DefaultServicePortMappings;
 import com.valhallagame.common.RestCaller;
 import com.valhallagame.common.RestResponse;
 import com.valhallagame.wardrobeserviceclient.message.AddWardrobeItemParameter;
+import com.valhallagame.wardrobeserviceclient.message.DebugAddWardrobeItemParameter;
 import com.valhallagame.wardrobeserviceclient.message.GetWardrobeItemsParameter;
 
 public class WardrobeServiceClient {
@@ -41,5 +42,10 @@ public class WardrobeServiceClient {
 	public RestResponse<String> addWardrobeItem(String characterName, String itemName) throws IOException {
 		return restCaller.postCall(wardrobeServiceServerUrl + "/v1/wardrobe/add-wardrobe-item",
 				new AddWardrobeItemParameter(characterName, itemName), String.class);
+	}
+
+	public RestResponse<String> debugAddWardrobeItem(String username, String itemName) throws IOException {
+		return restCaller.postCall(wardrobeServiceServerUrl + "/v1/wardrobe/debug-add-wardrobe-item",
+				new DebugAddWardrobeItemParameter(username, itemName), String.class);
 	}
 }
