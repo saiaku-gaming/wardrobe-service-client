@@ -33,9 +33,9 @@ public class WardrobeServiceClient {
 		return wardrobeServiceClient;
 	}
 
-	public RestResponse<List<String>> getWardrobeItems(String characterName) throws IOException {
+	public RestResponse<List<String>> getWardrobeItems(String username) throws IOException {
 		return restCaller.postCall(wardrobeServiceServerUrl + "/v1/wardrobe/get-wardrobe-items",
-				new GetWardrobeItemsParameter(characterName), new TypeReference<List<String>>() {});
+				new GetWardrobeItemsParameter(username), new TypeReference<List<String>>() {});
 	}
 
 	public RestResponse<String> addWardrobeItem(AddWardrobeItemParameter input) throws IOException {

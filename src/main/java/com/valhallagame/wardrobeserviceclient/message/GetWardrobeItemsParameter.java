@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class GetWardrobeItemsParameter {
 	@NotNull
-	private String characterName;
+	private String username;
 }
