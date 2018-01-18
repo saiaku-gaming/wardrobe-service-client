@@ -38,8 +38,8 @@ public class WardrobeServiceClient {
 				new GetWardrobeItemsParameter(characterName), new TypeReference<List<String>>() {});
 	}
 
-	public RestResponse<String> addWardrobeItem(String characterName, String itemName) throws IOException {
+	public RestResponse<String> addWardrobeItem(AddWardrobeItemParameter input) throws IOException {
 		return restCaller.postCall(wardrobeServiceServerUrl + "/v1/wardrobe/add-wardrobe-item",
-				new AddWardrobeItemParameter(characterName, itemName), String.class);
+				input, String.class);
 	}
 }

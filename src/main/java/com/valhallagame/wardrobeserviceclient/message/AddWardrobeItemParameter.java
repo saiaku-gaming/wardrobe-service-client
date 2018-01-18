@@ -14,5 +14,5 @@ public class AddWardrobeItemParameter {
 	private String characterName;
 	
 	@NotNull
-	private String itemName;
+	private String name;
 }
