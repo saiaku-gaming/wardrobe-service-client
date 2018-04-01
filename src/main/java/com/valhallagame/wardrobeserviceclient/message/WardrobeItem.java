@@ -1,18 +1,19 @@
 package com.valhallagame.wardrobeserviceclient.message;
 
 public enum WardrobeItem {
-	// ------------------------ ARMORS -------------------
+	// ------------------------ ARMORS -----------------------
+	NAKED,
 	CLOTH_ARMOR,
 	LEATHER_ARMOR,
 	MAIL_ARMOR,
 	SHAMANS_PELT,
 	RANGERS_SAFEGUARD,
 	CHIEFTAINS_CUIRASS,
-	// ---------------------------------------------------
+	// -------------------------------------------------------
 
-	// --------------------- UNIQUE ARMORS ---------------
+	// --------------------- UNIQUE ARMORS -------------------
 	FROST_SHAMAN,
-	// ---------------------------------------------------
+	// -------------------------------------------------------
 	
 	// --------------------- WEAPONS ---------------------
 	SWORD,
