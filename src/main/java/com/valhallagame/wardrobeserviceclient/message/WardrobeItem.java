@@ -22,7 +22,7 @@ public enum WardrobeItem {
 	DAGGER,
 	GREATAXE,
 	WARHAMMER,
-	BOW,
+	HUNTING_BOW,
 	// ---------------------------------------------------
 
 	// --------------------- OFFHAND ---------------------
